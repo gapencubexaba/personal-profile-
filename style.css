@@ -1,0 +1,75 @@
+/* ===== Base styles ===== */
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth; /* for smooth anchor scrolling */
+}
+
+h2 {
+  color: #007bff;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 0.5rem;
+}
+
+/* ===== Navigation bar tweaks ===== */
+.navbar-nav .nav-link {
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.navbar-nav .nav-link:hover {
+  color: #ffc107 !important; /* gold accent on hover */
+}
+
+/* ===== Skills list styling (as per PDF) ===== */
+.skill-list {
+  list-style-type: none;
+  padding: 0;
+}
+.skill-list li {
+  background: #f8f9fa;
+  padding: 10px;
+  margin: 5px 0;
+  border-left: 5px solid #007bff;
+  font-weight: 500;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.skill-list li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.05);
+}
+
+/* ===== Section spacing ===== */
+section {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+/* ===== Hero image border ===== */
+.hero img {
+  border-width: 3px;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+
+/* ===== Cards improvements ===== */
+.card {
+  border: none;
+  border-radius: 1rem;
+}
+.card .btn-outline-primary {
+  border-width: 2px;
+}
+.card .btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* ===== Footer ===== */
+footer {
+  margin-top: 2rem;
+}
+
+/* ===== Responsive adjustments ===== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}
